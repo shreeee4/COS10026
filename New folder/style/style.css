@@ -13,7 +13,7 @@ description:  COS10026 Assignment 1 (Group)
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header h1{
+h1{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
@@ -23,7 +23,11 @@ header h1{
     background-image: url("ZEN5-A.jpg");
     padding-top: 30px;
 }
-
+#header1{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
 #common_header {
     display: block;
     margin-top: 0px;
@@ -62,25 +66,17 @@ nav a {
     0% {left:-10000px;}
     100%{left: 0;}  
 }
-
-#page_nav {
-    display: flex;
-    gap: 0.5rem;
-  }
   
 a.page_nav {
-    flex: 1;
     background-color: #051531;
     color: whitesmoke;
     border: 1px solid;
     padding: 0.5rem;
     text-align: center;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
+    transition:all 0.5s ease-out;
+}
   
-a.page_nav:hover,
-  a.page_nav:focus {
+a.page_nav:hover {
     background-color: whitesmoke;
     color: #051531;
   }
