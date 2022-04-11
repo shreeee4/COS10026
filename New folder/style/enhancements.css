@@ -1,0 +1,287 @@
+/*
+filename: enhancements.css
+author: Ankit Malik
+created: 046/04/22
+description:  COS10026 Assignment 1 (Group)
+*/
+
+
+.div2,
+.div3 {
+  height: 50vh;
+  width: 90vw;
+  margin: auto;
+}
+
+.div1 {
+  height: 40vh;
+  width: 90vw;
+  margin: auto;
+}
+
+.div2,
+.div3 {
+  display: flex;
+}
+
+.div2,
+.div21,
+.div22,
+.div3,
+.div31,
+.div32 {
+margin:auto;
+}
+
+.div21 h2 {
+  margin-top: 30px;
+}
+
+.animation1 {
+  height: 50px;
+  width: 50px;
+  border: 4px solid purple;
+  margin: 5px;
+  display: inline-block;
+  transform: translate(200px, 50px);
+  animation-name: move;
+  animation-duration: 4s;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes move {
+  0% {
+    background-color: black;
+  }
+
+  25% {
+    background-color: purple;
+    transform: translate(1220px, 50px);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgb(24, 168, 173);
+    transform: translate(1220px, 200px);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(203, 128, 41);
+    border-top: 0;
+  }
+
+  75% {
+    background-color: pink;
+    transform: translate(200px, 200px);
+    border-radius: 100%;
+  }
+
+  100% {
+    background-color: black;
+    /* transform: translatey(); */
+    border-radius: 0%;
+  }
+}
+
+#para {
+  transform: translate(10%, 260%);
+  width:48%;
+  margin:auto;
+}
+
+.div2,
+.div3 {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font: 17px Arial, sans-serif;
+  color: rgb(27, 207, 153);
+  margin: 1%;
+  padding: 0.7%;
+  border: 3.5px solid rgb(3, 41, 23);
+}
+
+#page_header {
+  display: block;
+  padding-left: 18%;
+  background-color: rgb(5, 5, 66);
+
+  position: relative;
+  display: block;
+  animation-name: content;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+  /* animation-fill-mode: backwards; */
+}
+@keyframes content {
+  0% {
+    left: -5000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+a.page_nav {
+  flex: 1;
+  background-color: #051531;
+  color: whitesmoke;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a.page_nav:hover,
+a.page_nav:focus {
+  background-color: whitesmoke;
+  color: #051531;
+}
+
+.dropup {
+  float: left;
+  clear: both;
+  display: block;
+}
+
+.button {
+  background-color: #295ba1;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+}
+
+.mail_links {
+  display: none;
+  position: absolute;
+  bottom: 65px;
+  background-color: #89a1d7;
+  min-width: 155px;
+  z-index: 1;
+}
+
+.mail_links a {
+  color: black;
+  padding: 10px 14px;
+  display: block;
+}
+
+.mail_links a:hover {
+  background-color: rgb(197, 224, 223);
+}
+
+.dropup:hover .mail_links {
+  display: block;
+}
+
+.dropup:hover .button {
+  background-color: #1f72a9;
+}
+
+footer {
+  background-color: #051531;
+}
+
+.uni {
+  margin-left: 32%;
+  text-align: center;
+  background-color: #295ba1;
+  display: inline-block;
+  font-size: 15px;
+  padding: 15px;
+  transform: translateX(400px);
+}
+
+.uni:hover {
+  background-color: #1f72a9;
+}
+
+.uni a {
+  color: white;
+}
+
+.home {
+  float: right;
+  text-align: center;
+  background-color: #295ba1;
+  display: block;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.home:hover {
+  background-color: #1f72a9;
+}
+.home a {
+  color: white;
+}
+
+
+.enhancement_full {
+  padding: 0%;
+  margin: 0%;
+  background-color: #5665c9;
+}
+
+#head1 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 70px;
+  text-align: center;
+  border-bottom:14px double white;
+  padding-bottom: 30px;
+  background-image: url("ZEN5-A.jpg");
+  padding-top: 30px;
+  text-align: center;
+  margin:0px;
+}
+
+#common_header {
+  display: block;
+  margin-top: 0px;
+  background-image: url("ZEN5-A.jpg");
+  border-bottom: 1em double white;
+    
+}
+nav a {
+  display: inline-block;
+  text-decoration: none; 
+  font: 17px Arial, sans-serif;
+  color: white;
+  margin: 1%; 
+  padding: 0.7%;
+  border: 3.5px solid white;
+}
+
+#common_header :hover { 
+  border-color: lightblue;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+h2 {
+  font: xx-large;
+}
+
+#para {
+  font-size: x-large;
+  font-family: cursive;
+}
+
+.para2 {
+  font-size: 1.2em;
+}
